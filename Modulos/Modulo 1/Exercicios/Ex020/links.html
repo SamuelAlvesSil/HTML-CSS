@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        a {
+            color:red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            color: darkgoldenrod;
+            background-color: darkblue;
+        }
+        .especial::after {
+            content: ' {u}';
+            text-decoration: none;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>    
+    <ul>
+        <li><a href="https://google.com.br" class="especial">GitHub</a></li>
+        <li><a href="https://Youtube.com">Youtube</a></li>
+        <li><a href="https://google.com">site</a></li>
+    </ul>
+</body>
+</html>
