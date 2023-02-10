@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --fonte01: ;
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
     --fonte02: 'Passion One', cursive;
     --fonte03: 'Sriracha', cursive;
 }
@@ -11,12 +11,13 @@
 * {
      margin: 0px;
      padding: 0px;
+     font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
-    font-family: Georgia, 'Times New Roman', Times, serif;    
+    font-family: var(--fonte01);    
 }
 a {
     color: white;
@@ -33,7 +34,8 @@ header {
     padding: 50px 0px;
 }
 header > h1 {
-    font-size: 3em;
+    font-family: var(--fonte02);
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
@@ -42,6 +44,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 50px;
+    font-family: var(--fonte03);
+    font-size: 3vw;
 }
 section#img01 {
     background-image: url('../_imagens/background001.jpg');
@@ -58,7 +62,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 400px;
+    padding: 5px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
